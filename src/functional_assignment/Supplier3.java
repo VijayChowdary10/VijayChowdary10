@@ -1,0 +1,14 @@
+package functional_assignment;
+
+import java.util.Scanner;
+import java.util.function.Supplier;
+
+public class Supplier3 {
+public static void main(String[] args) {
+	Scanner sc =new Scanner(System.in);
+	int a=sc.nextInt();
+	double b= Math.random()*100;
+	Supplier<Double> sub= ()->a-b;
+	System.out.println(sub.get());
+}
+}
